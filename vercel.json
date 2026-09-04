@@ -1,0 +1,9 @@
+{
+  "framework": "nextjs",
+  "functions": {
+    "src/app/api/scrape/route.ts": {
+      "maxDuration": 300
+    }
+  },
+  "rewrites": []
+}
