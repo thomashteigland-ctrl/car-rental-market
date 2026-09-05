@@ -1,3 +1,4 @@
+import { AdminEntry } from "@/components/admin-entry";
 import { Providers } from "@/components/providers";
 import type { ReactNode } from "react";
 import "./globals.css";
@@ -17,13 +18,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <div className="font-semibold tracking-tight text-teal-900">
                 Varebil Market
               </div>
-              <a
-                href={process.env.PUBLIC_ADMIN_APP_URL || "http://localhost:5173"}
-                className="text-sm text-stone-500 hover:text-teal-800 hover:underline"
-                title="Requires access code"
-              >
-                Admin
-              </a>
+              <AdminEntry
+                adminUrl={
+                  process.env.PUBLIC_ADMIN_APP_URL || "http://localhost:5173"
+                }
+                accessCode={process.env.PUBLIC_ADMIN_ACCESS_CODE || ""}
+              />
             </div>
           </header>
           <main className="mx-auto max-w-7xl px-4 py-6">

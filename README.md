@@ -19,7 +19,7 @@ Requires the same Supabase grants as admin (`supabase/grants.sql` in the admin r
 ## Vercel
 
 1. Create a new Vercel project from this folder / GitHub repo.
-2. Set env: `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_ANON_KEY`, `PUBLIC_ADMIN_APP_URL` (your admin site URL).
+2. Set env: `PUBLIC_SUPABASE_URL`, `PUBLIC_SUPABASE_ANON_KEY`, `PUBLIC_ADMIN_APP_URL` (your admin site URL), and `PUBLIC_ADMIN_ACCESS_CODE` (gates the Admin header link).
 3. Deploy. Scrape route allows up to 300s (`maxDuration`).
 
 ## Link from admin
