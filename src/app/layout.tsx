@@ -19,9 +19,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </div>
               <a
                 href={process.env.PUBLIC_ADMIN_APP_URL || "http://localhost:5173"}
-                className="text-sm text-teal-800 hover:underline"
+                className="text-sm text-stone-500 hover:text-teal-800 hover:underline"
+                title="Requires access code"
               >
-                ← Back to admin
+                Admin
               </a>
             </div>
           </header>
