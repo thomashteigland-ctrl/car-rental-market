@@ -135,6 +135,7 @@ async function applyListingsBatch(
       });
       if (fresh.priceNok != null) {
         priceObs.push({
+          id: crypto.randomUUID(),
           listingId: fresh.id,
           observedDate: today,
           priceNok: fresh.priceNok,
@@ -204,6 +205,7 @@ async function applyListingsBatch(
 
     if (priceChanged) {
       priceObs.push({
+        id: crypto.randomUUID(),
         listingId: fresh.id,
         observedDate: today,
         priceNok: newPrice!,
