@@ -131,6 +131,7 @@ async function applyListingsBatch(
         scrapedDate: today,
         wltpKm: fresh.wltpKm,
         variant: fresh.variant,
+        updatedAt: new Date().toISOString(),
       });
       if (fresh.priceNok != null) {
         priceObs.push({
